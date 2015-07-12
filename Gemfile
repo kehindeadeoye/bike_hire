@@ -35,10 +35,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'carrierwave'
-gem 'mini_magick'
+#gem 'mini_magick'
 gem 'country_select'
 gem 'haml-rails'
+gem 'mini_magick', '~> 4.2.7'
 gem 'devise'
+gem 'imagemagick-binaries', '~> 6.8.7.5.1'
+gem 'carrierwave-graphicsmagick', '~> 1.0.0'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
