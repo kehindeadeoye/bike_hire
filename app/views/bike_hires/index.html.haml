@@ -1,0 +1,27 @@
+%h1 Listing bike_hires
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Price
+      %th Manufacturer
+      %th Image
+      %th
+      %th
+      %th
+
+  %tbody
+    - @bike_hires.each do |bike_hire|
+      %tr
+        %td= bike_hire.name
+        %td= bike_hire.price
+        %td= bike_hire.manufacturer
+        %td= bike_hire.image
+        %td= link_to 'Show', bike_hire
+        %td= link_to 'Edit', edit_bike_hire_path(bike_hire)
+        %td= link_to 'Destroy', bike_hire, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Bike hire', new_bike_hire_path

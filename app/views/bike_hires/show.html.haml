@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @bike_hire.name
+%p
+  %b Price:
+  = @bike_hire.price
+%p
+  %b Manufacturer:
+  = @bike_hire.manufacturer
+%p
+  %b Image:
+  = @bike_hire.image
+
+= link_to 'Edit', edit_bike_hire_path(@bike_hire)
+\|
+= link_to 'Back', bike_hires_path
